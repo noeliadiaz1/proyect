@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Alpa corral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body style="display: flexbox;">
+
+    <!-- barra de navegacion -->
+    <div class="navBar">
+        <img src="Imagenes/CapturaLogo.png" class="img">
+
+        <div class="contenedorGestiones">
+            <a href="index.html">Inicio</a>
+            <a href="ProductosRegionales.html" class="menu-selected">Productos Regionales</a>
+            <a href="SitioInteres.html">Sitio de intéres</a>
+            <a href="Atractivos.html">Atractivos Turísticos</a>
+            <a href="centroApoyo.html">Centro de Apoyo</a>
+            <a href="Comercios.html">Comercios locales</a>
+            <a href="logeo.html">Ingreso Comerciantes</a>
+            <hr>
+            <div class="cotizacion"></div>
+        </div>
+    </div>
+
+    <!-- cuerpo principal  -->
+    <div class="cuerpoPrincipalRgionales">
+
+        <!-- cotizacion  -->
+        <div class="side-bar">
+           
+
+            <!-- buscador  -->
+            <div class="side-bar">
+
+                <div class="buscador">
+                    <input id="txt-busqueda" type="text" placeholder="Buscar...">
+                    <button id="btn-buscar">Buscar Productos</button>
+                </div>
+
+                <!-- tarjetas de productos-->
+                <div class="grupoTarjetas">
+                    <div class="tarjeta" id="mate" data-comercio="El Cordobes " data-latitud="-32.68995" data-longitud="-64.72047">
+                        <img class="foto" src="Imagenes/mate.jpg" alt="mate">
+                        <h1 class="articulo">Mate artesanal</h1>
+                        <h3 class="genero">regionales</h3>
+                        <h5 class="adicional"> Colores : Negro y Azul</h5>
+                        <h5 class="comercio">Comercio: El Cordobes </h5>
+                        <h1 class="precio">$ 2950</h1>
+                    </div>
+                    <div class="tarjeta" id="pack" data-comercio="Regionales AlpaCorral "data-latitud="-32.69365" data-longitud="-64.71594">
+                        <img class="foto" src="Imagenes/pack.jpg" alt="pack">
+                        <h1 class="articulo">Combo De Productos Regionales</h1>
+                        <h3 class="genero">Productos Regionales</h3>
+                        <h5 class="adicional">Alternativas con o sin vino </h5>
+                        <h5 class="comercio">Comercio: Regionales AlpaCorral </h5>
+                        <h1 class="precio">$ 9550</h1>
+                    </div>
+                    <div class="tarjeta" id="tabla" data-comercio="Regaleria Marcos " data-latitud="-32.690242" data-longitud="-64.723335">
+                        <img class="foto" src="Imagenes/tabla.jpg" alt="tabla">
+                        <h1 class="articulo">Tabla para asado</h1>
+                        <h3 class="genero">Productos Regionales</h3>
+                        <h5 class="adicional">Alternativas: algarrobo o pino</h5>
+                        <h5 class="comercio">Comercio: Regaleria Marcos </h5>
+                        <h1 class="precio">$ 6000</h1>
+                    </div>
+                    <div class="tarjeta" id="alfajores" data-comercio="Alfajores Corral" data-latitud="-32.691940" data-longitud="-64.721575">
+                        <img class="foto" src="Imagenes/alfajores.jpg" alt="alfajores">
+                        <h1 class="articulo">Alfajores Artesanales</h1>
+                        <h3 class="genero">Productos Regionales</h3>
+                        <h5 class="adicional">Sabores: Dulce de leche, chocolate o fruta </h5>
+                        <h5 class="comercio">Comercio: Alfajores Corral </h5>
+
+                        <h1 class="precio">$ 2000</h1>
+                    </div>
+                    <div class="tarjeta" data-comercio="Alpa Indumentaria " id="poncho" data-latitud="-32.692445" data-longitud="-64.7192790">
+                        <img class="foto" src="Imagenes/poncho.jpg" alt="poncho">
+                        <h1 class="articulo">Pocho unisex</h1>
+                        <h3 class="genero">Productos Regionales</h3>
+                        <h5 class="adicional">Todos los talles / todos los colores</h5>
+                        <h5 class="comercio">Comercio: Alpa Indumentaria </h5>
+                        <h1 class="precio">$ 5800</h1>
+                    </div>
+                    <div class="tarjeta" id="silla" data-comercio="El Cordobes " data-latitud="-32.68995" data-longitud="-64.72047">
+                        <img class="foto" src="Imagenes/silla.jpg" alt="silla">
+                        <h1 class="articulo">Silla de pino</h1>
+                        <h3 class="genero">Muebles</h3>
+                        <h5 class="adicional">Pino natural o laqueado </h5>
+                        <h5 class="comercio">Comercio: El Cordobes </h5>
+                        <h1 class="precio">$ 12000</h1>
+                    </div>
+                    <div class="tarjeta" id="mesa" data-comercio="El Cordobes " data-latitud="-32.68995" data-longitud="-64.72047">
+                        <img class="foto" src="Imagenes/mesa.jpg" alt="mesa">
+                        <h1 class="articulo">Mesa de pino </h1>
+                        <h3 class="genero">Muebles</h3>
+                        <h5 class="adicional">Pino natural o laqueado</h5>
+                        <h5 class="comercio">Comercio: El Cordobes </h5>
+                        <h1 class="precio">$ 7550</h1>
+                    </div>
+                </div>
+
+                  <!-- mapa  -->
+                <div class="contenedorMapa">
+                    <div id="mi_mapa"></div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+            <script src="script.js"></script>
+            <script src="scripts/cotizacion.js"></script>
+</body>
+
+</html>

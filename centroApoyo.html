@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Centro de Apoyo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+       
+  </head>
+  <body>
+    
+    <img id="logo" src="Imagenes/CapturaLogo.png" class="img">
+    
+   
+    <div class="contenedorGestiones">
+      <a href="index.html">Inicio</a>
+        <a href="ProductosRegionales.html">Productos Regionales</a>
+        <a href="SitioInteres.html">Sitio de intéres</a>
+        <a href="Atractivos.html">Atractivos Turísticos</a>
+        <a href="centroApoyo.html" class="menu-selected">Centro de Apoyo</a>
+        <a href="Comercios.html">Comercios locales</a>
+        <a href="logeo.html">Ingreso Comerciantes</a>
+        <hr>
+        <div class="cotizacion"></div>
+    </div>
+    <button onclick="mostrarApoyo()">Informacion turistica</button>
+    <button onclick="movil()">Moviles de asistencia</button>
+    
+
+    <div id ="mi_mapa"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+
+    <script src="scripts/cotizacion.js"></script>
+    
+  </body>
+</html>

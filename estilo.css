@@ -1,0 +1,368 @@
+#mi_mapa {
+    height: 500px;
+    width: 100%;
+}
+
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.barraSuperior{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.infoPrincipal {
+    width: 97%;
+    padding: 1em;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+
+
+.img {
+    text-align: right;
+    height: 170px;
+    width: 200px;
+}
+
+.img2 {
+    height: 650px;
+    width: 99%;
+    padding: 10px;
+}
+
+.img3 {
+    height: 300px;
+    width: 25%;
+
+
+}
+
+.contenedorGestiones {
+    text-align: right;
+    /* Alinea el texto a la derecha */
+}
+
+.contenedorGestiones a {
+    color: black;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    /* Alinea el texto a la derecha */
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+
+.contenedorGestiones a:hover {
+    color: gray;
+    /* Cambiar el color al pasar el puntero sobre el enlace */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    ;
+    text-align: center;
+}
+
+.sitioInteres h2 {
+    color: #00d084;
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sitioInteres h3 {
+    color: #00d084;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sitioInteres a {
+    color: #00d084;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sitioInteres p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sitioInteres img {
+    text-align: right;
+    height: 450px;
+    width: 500px;
+}
+
+/* ----------------------indwx------------*/
+
+
+.cuerpoIndex{
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+}
+.grupoTarjetasIndex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tarjetaIndex{ 
+    display: flex;
+    flex-direction: column;
+    width: 900px ;
+    height: auto;
+    padding: 1em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px  2px 2px rgb(126, 126, 126);
+    border-radius: 5px;    
+}
+
+.fotoIndex{
+align-items: center;
+    margin: auto auto 2em auto;
+    object-fit: cover;
+}
+.des, .info {
+    width: 100%;
+    text-align:center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.info{
+    font: size 1.5em; ;
+}
+.link{
+    font-size: 2.5em; ;
+    text-align: center;
+}
+
+/* ----------------------sitios------------*/
+
+
+.cuerpoSitios{
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+}
+.grupoTarjetasSitios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tarjetaSitios{ 
+    display: flex;
+    flex-direction: column;
+    width: 90% ;
+    height: auto;
+    padding: 1em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px  2px 2px rgb(126, 126, 126);
+    border-radius: 5px;    
+}
+.fotos{
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    margin: auto;
+}
+.fotoSitio{
+align-items: center;
+    margin: auto auto 2em auto;
+    object-fit: cover;
+}
+.des, .info {
+    width: 100%;
+    text-align:center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.info{
+    font: size 1.5em; ;
+}
+.link{
+    font-size: 2.5em; ;
+    text-align: center;
+}
+
+
+/* ----------------------atractivos------------*/
+.cuerpoAtractivos {
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+}
+
+.grupoTarjetasAtractivos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tarjetaAtractivos {
+    display: flex;
+    width: 20em;
+    height: 20em;
+    padding: 1em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(126, 126, 126);
+    transition: box-shadow .2s;
+    border-radius: 5px;
+}
+
+.tarjetaAtractivos:hover {
+    box-shadow: 8px 8px 10px grey;
+}
+
+.fotoAtractivo {
+    display: flex;
+    align-items: center;
+    margin: auto auto 2em auto;
+}
+
+.des,
+.info {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.info {
+    font: size 1.5em;
+    ;
+}
+
+
+/* ----------------------comercios------------*/
+
+#botonComercio {
+    bottom: 100px;
+    border-bottom: #00d084;
+    padding-bottom: 2px;
+    align-items: center;
+}
+
+/* ----------------------productos regionales------------*/
+.cuerpoPrincipal {
+    display: grid;
+    grid-template-rows: 5% 10% 30% 55%;
+}
+
+.buscador {
+    width: 80%;
+    margin: auto 20px 20px 180px;
+    margin-bottom: 10px;
+    border-color: #333;
+}
+
+.buscador input[type="text"] {
+    /* width: 100%; */
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buscador button {
+    /* width: 100%; */
+    background-color: rgb(31, 22, 22);
+    color: #d4dfe6;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grupoTarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    width: 10em;
+    height: auto;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(126, 126, 126);
+    transition: box-shadow .2s;
+    border-radius: 5px;
+}
+
+.tarjeta:hover {
+    box-shadow: 8px 8px 10px grey;
+}
+
+.foto {
+    width: 100%;
+    margin: auto auto 2em auto;
+}
+
+.genero,
+.articulo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.articulo {
+    font: size 1em;
+    ;
+}
+
+.adicional,
+.comercio {
+    width: 100%;
+    text-align: center;
+    margin: .5em;
+    font-size: 0.5em;
+}
+
+.precio {
+    width: 100%;
+    text-align: right;
+    margin: 1em 0 0 0;
+    font-size: 1.2em;
+}
+
+.cotizacion {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+}
+
+.menu-selected {
+    background-color: gray;
+}
